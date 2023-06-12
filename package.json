@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "npx cross-env NODE_ENV=production NODE_OPTIONS=--openssl-legacy-provider ng serve",
     "start.ie": "ng serve --prod",
     "build": "ng build --prod --stats-json",
     "analyze": "webpack-bundle-analyzer dist/ie/stats.json",
